@@ -1,0 +1,16 @@
+h1{
+	font-weight: 700;
+}
+
+footer{
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+}
+
+.navbar-default {
+	background-color: #0A2C3F;
+}
