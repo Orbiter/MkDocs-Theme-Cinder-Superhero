@@ -30,7 +30,7 @@ Then navigate to the root of your project directory:
 
 Download the Cinder theme archive.
 
-<button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.0</button>
+<a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.0/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.0</button></a>
 
 Create a directory in your MkDocs project called `cinder`.
 

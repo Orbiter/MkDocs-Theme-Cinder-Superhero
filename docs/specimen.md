@@ -4,9 +4,9 @@
 
 ### Typefaces
 
-- Headers: PT Sans
-- Body: Open Sans
-- Code: Hack
+- Headers: [PT Sans](https://www.google.com/fonts/specimen/PT+Sans)
+- Body: [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
+- Code: [Hack](http://sourcefoundry.org/hack/)
 
 ### Body Copy
 
