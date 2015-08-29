@@ -2,68 +2,107 @@
 
 ## About
 
-Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs).  It is built on the Bootstrap framework.
+Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs).  It's built on the Bootstrap framework and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)), icons <i class="fa fa-bolt"></i> ([FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
+
+You are looking at the theme and can see a selection of the theme elements on the [Specimen page](/specimen/).
 
 ## Install
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+**<em>Required</em>**: Python 2.6+ or 3.3+
 
-### Install with pip
+### Install MkDocs & Create a New Project
 
-Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+If you haven't installed MkDocs yet, use the following command to install it:
 
+<pre><code class="nohighlight">$ pip install mkdocs</code></pre>
 
-<pre><code class="nohighlight">$ pip install mkdocs-cinder</code></pre>
+Next, navigate to a clean directory and create a new MkDocs project with the following command:
 
+<pre><code class="nohighlight">$ mkdocs new [projectname]</code></pre>
 
-Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+Replace `[projectname]` with the name of your project (without the brackets).
 
-### Install from Source
+Then navigate to the root of your project directory:
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+<pre><code class="nohighlight">$ cd [projectname]</code></pre>
 
-<pre><code class="nohighlight">$ git clone https://somesite.com/cinder.git</code></pre>
+### Install the Cinder Theme
 
+<i class="fa fa-cloud-download"></i> Download the Cinder theme archive.
 
-Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+Create a directory in your MkDocs project called `cinder`.
 
+<pre><code class="nohighlight">$ mkdir cinder</code></pre>
 
-<pre><code class="nohighlight">$ python setup.py install</code></pre>
+Place the downloaded theme archive inside the new `cinder` directory and unpack it.
 
+Your project directory should now look like this:
 
+<pre><code class="nohighlight">.
+├── mkdocs.yml
+├── cinder
+│     ├── css
+│     ├── img
+│     ├── js
+│     ├── base.html
+│     ├── content.html
+│     ├── 404.html
+│     ├── nav-sub.html
+│     ├── nav.html
+│     └── toc.html
+└── docs
+      └── index.md
+</code></pre>
 
-## Usage
+### Complete Your Settings File
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located in the root of your project directory after you use the `mkdocs new` command.  Open the file in a text editor and modify it to include the `theme_dir` setting as follows:
 
-### YAML Settings
-
-Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-
-<pre><code>site_name: [YourSite]
+<pre><code class="yaml">site_name: [YOURPROJECT]
 theme_dir: cinder
 pages:
 - Home: index.md
-- Page1: page1.md
 </code></pre>
 
-### Create New Pages
+## Test with a Local Site Server
 
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
 
-Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+Use the following command to establish a local server for your site:
 
+<pre><code class="nohighlight">$ mkdocs serve</code></pre>
+
+Then open your site in any browser at the URL `http://localhost:8000`.
+
+## Create Your Site
+
+### Add Content with Markdown Syntax
+
+Get to work on your site home page by opening the `docs/index.md` file and editing it in Markdown syntax.  The HTML automatically updates in the browser when you save the Markdown file if you use the MkDocs server (see command above).
+
+### Add New Pages
+
+Add new pages to your site by creating a new Markdown file in your `docs` directory, then linking to the new page in the `mkdocs.yml` file.  This uses a `Page Name : Markdown file` syntax.
+
+For example, to add an About page using a Markdown file that is located on the path `docs/about.md`, you would format the `mkdocs.yml` file as follows:
+
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme_dir: cinder
+pages:
+- Home: index.md
+- About: about.md</code></pre>
+
+Add additional pages to your site by repeating the above series of steps.
 
 ## Issues
 
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+If you have any issues with the theme, please report them on the Cinder repository:
 
-<button class="btn btn-primary" type="submit">Active Issues</button>
-<button class="btn btn-primary" type="submit">Report Issue</button>
+<a href="https://github.com/chrissimpkins/cinder/issues/new"><button class="btn btn-primary" type="submit">Report Issue</button></a>
+<a href="https://github.com/chrissimpkins/cinder/issues"><button class="btn btn-primary" type="submit">Active Issues</button></a>
 
 ## License
 
-MIT license. The full text of the license is available [here](#).
+MIT license. The full text of the license is available [here]().
 
 
 

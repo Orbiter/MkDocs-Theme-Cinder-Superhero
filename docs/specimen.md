@@ -1,4 +1,4 @@
-<h1>Cinder Theme Elements</h1>
+<h1>Cinder Theme Specimen</h1>
 
 ## Typography
 

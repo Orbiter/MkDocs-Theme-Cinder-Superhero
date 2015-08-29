@@ -15,6 +15,20 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
 h1, h2 {
     font-weight: 700;
 }
+
+h4 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+h5 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-variant: small-caps;
+}
+
 pre, code {
     background-color: #FCFDFF;
 }

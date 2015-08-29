@@ -2,5 +2,5 @@ site_name: Cinder
 theme_dir: cinder
 pages:
 - Home: index.md
-- Elements: elements.md
+- Specimen: specimen.md
 
