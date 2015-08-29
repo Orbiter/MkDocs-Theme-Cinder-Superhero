@@ -4,3 +4,5 @@
 
 A clean, responsive MkDocs static documentation site generator theme
 
+[Demo and Documentation](http://sourcefoundry.org/cinder/)
+
