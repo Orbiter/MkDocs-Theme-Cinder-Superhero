@@ -2,7 +2,7 @@
 
 ## About
 
-Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs).  It's built on the Bootstrap framework and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)), icons <i class="fa fa-bolt"></i> ([FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
+Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the Bootstrap framework and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)), icons <i class="fa fa-bolt"></i> ([FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
 
 You are looking at the theme and can see a selection of the theme elements on the [Specimen page](/specimen/).
 
@@ -28,7 +28,9 @@ Then navigate to the root of your project directory:
 
 ### Install the Cinder Theme
 
-<i class="fa fa-cloud-download"></i> Download the Cinder theme archive.
+Download the Cinder theme archive.
+
+<button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder</button>
 
 Create a directory in your MkDocs project called `cinder`.
 
@@ -93,6 +95,14 @@ pages:
 
 Add additional pages to your site by repeating the above series of steps.
 
+## Build Your Site
+
+Build your site files with the command:
+
+<pre><code class="nohighlight">$ mkdocs build</code></pre>
+
+Your site files are built in the `site` directory and are ready to use.  Deploy the contents of the `site` directory to your web server.
+
 ## Issues
 
 If you have any issues with the theme, please report them on the Cinder repository:
@@ -102,7 +112,7 @@ If you have any issues with the theme, please report them on the Cinder reposito
 
 ## License
 
-MIT license. The full text of the license is available [here]().
+Cinder is licensed under the MIT license. The full text of the license is available [here](https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md).
 
 
 
