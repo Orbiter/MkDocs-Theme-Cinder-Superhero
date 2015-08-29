@@ -1,4 +1,4 @@
-<img src="img/header.png" alt="Cinder | A clean, responsive theme for MkDocs" width="728">
+<a href="http://sourcefoundry.org/cinder/"><img src="img/header.png" alt="Cinder | A clean, responsive theme for MkDocs" width="728"></a>
 
 ## Cinder
 
