@@ -2,7 +2,7 @@
 
 ## About
 
-Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the Bootstrap framework and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)), icons <i class="fa fa-bolt"></i> ([FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
+Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the [Bootstrap framework](http://getbootstrap.com/) and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)), icons (<i class="fa fa-flag"></i> [FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
 
 You are looking at the theme and can see a selection of the theme elements on the [Specimen page](/specimen/).
 
@@ -102,6 +102,53 @@ Build your site files with the command:
 <pre><code class="nohighlight">$ mkdocs build</code></pre>
 
 Your site files are built in the `site` directory and are ready to use.  Deploy the contents of the `site` directory to your web server.
+
+## Site Customization
+
+The following are a few common customizations that you might be interested in.  For much more detail about the configuration of your site, check out the [MkDocs Configuration documentation](https://github.com/mkdocs/mkdocs/blob/master/docs/user-guide/configuration.md).
+
+### Site Favicon
+
+Place your site favicon image file in the top level of your docs directory and then include a new `site_favicon:` field in the `mkdocs.yml` file:
+
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme_dir: cinder
+site_favicon: favicon.ico
+pages:
+  - Home: index.md
+  - About: about.md</code></pre>
+
+### Add Your Own CSS Stylesheets
+
+Create a `css` directory inside your `docs` directory and add your CSS files.  You can overwrite any of the Cinder styles in your CSS files.  Then include your CSS files in the `mkdocs.yml` file with the `extra_css` field:
+
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme_dir: cinder
+extra_css:
+  - css/mystyle.css
+  - css/myotherstyle.css
+pages:
+  - Home: index.md
+  - About: about.md</code></pre>
+
+Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Cinder styles).
+
+
+### Add Your Own JavaScript
+
+Create a `js` directory inside your `docs` directory and add your JS files.  Then include your JS files in the `mkdocs.yml` file with the `extra_js` field:
+
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme_dir: cinder
+extra_js:
+  - js/myscript.js
+  - js/myotherscript.js
+pages:
+  - Home: index.md
+  - About: about.md</code></pre>
+
+
+See the [MkDocs Configuration documentation](https://github.com/mkdocs/mkdocs/blob/master/docs/user-guide/configuration.md) for more information about configuration of your site.
 
 ## Issues
 

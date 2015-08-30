@@ -1,5 +1,5 @@
 /*
-  Cinder Theme for MkDocs | Copyright 2015 Christopher Simpkins | MIT License
+  Cinder Theme for MkDocs v0.9.1 | Copyright 2015 Christopher Simpkins | MIT License
 */
 
 body {
@@ -81,4 +81,8 @@ pre {
     font-weight: 700;
     color: #343838;
     height: 45px;
+}
+
+footer > hr {
+    width: 25%;
 }

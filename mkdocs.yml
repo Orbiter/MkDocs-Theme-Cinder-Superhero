@@ -1,6 +1,8 @@
 site_name: Cinder
 theme_dir: cinder
+site_author: Christopher Simpkins
+site_description: "A clean, responsive theme for static documentation websites that are generated with MkDocs"
 pages:
-- Home: index.md
-- Specimen: specimen.md
+  - Home: index.md
+  - Specimen: specimen.md
 
