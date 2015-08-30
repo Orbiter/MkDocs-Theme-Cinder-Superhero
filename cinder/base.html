@@ -13,11 +13,11 @@
 
     <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
-    <link href="{{ base_url }}/css/bootstrap-custom.css" rel="stylesheet">
+    <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="{{ base_url }}/css/base.css" rel="stylesheet">
     <link href="{{ base_url }}/css/cinder.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">{%- for path in extra_css %}
@@ -72,10 +72,11 @@
     </div>
 
     <footer class="col-md-12 text-center">
-        <hr>{% if copyright %}
-        <p>{{ copyright }}</p>
+        <hr>
+        <p>{% if copyright %}
+        <small>{{ copyright }}<br></small>
         {% endif %}
-        <small><p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
     </footer>
 
     <script src="{{ base_url }}/js/jquery-1.10.2.min.js"></script>

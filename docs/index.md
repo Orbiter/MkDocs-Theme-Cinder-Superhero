@@ -30,7 +30,7 @@ Then navigate to the root of your project directory:
 
 Download the Cinder theme archive.
 
-<a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.0/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.0</button></a>
+<a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.1/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.1</button></a>
 
 Create a directory in your MkDocs project called `cinder`.
 
@@ -125,13 +125,13 @@ Create a `css` directory inside your `docs` directory and add your CSS files.  Y
 <pre><code class="yaml">site_name: [YOURPROJECT]
 theme_dir: cinder
 extra_css:
-  - css/mystyle.css
-  - css/myotherstyle.css
+  - "css/mystyle.css"
+  - "css/myotherstyle.css"
 pages:
   - Home: index.md
   - About: about.md</code></pre>
 
-Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Cinder styles).
+Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Cinder styles).  You can find the Cinder and Bootstrap CSS files on the paths `cinder/css/cinder.css` and `cinder/css/bootstrap.min.css`, respectively.
 
 
 ### Add Your Own JavaScript
@@ -141,14 +141,35 @@ Create a `js` directory inside your `docs` directory and add your JS files.  The
 <pre><code class="yaml">site_name: [YOURPROJECT]
 theme_dir: cinder
 extra_js:
-  - js/myscript.js
-  - js/myotherscript.js
+  - "js/myscript.js"
+  - "js/myotherscript.js"
 pages:
   - Home: index.md
   - About: about.md</code></pre>
 
+### Github or Bitbucket Repository Link
 
-See the [MkDocs Configuration documentation](https://github.com/mkdocs/mkdocs/blob/master/docs/user-guide/configuration.md) for more information about configuration of your site.
+Include the `repo_url` field and define it with your repository URL:
+
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme_dir: cinder
+repo_url: "https://github.com/chrissimpkins/cinder"
+pages:
+  - Home: index.md
+  - About: about.md</code></pre>
+
+The link appears at the upper right hand corner of your site.
+
+### License Declaration and Link
+
+The Cinder theme displays your license declaration in the footer if you include a `copyright` field and define it with the text (and optionally the HTML link) that you would like to display:
+
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme_dir: cinder
+copyright: "Cinder is licensed under the &lt;a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'&gt;MIT license</a>"
+pages:
+  - Home: index.md
+  - About: about.md</code></pre>
 
 ## Issues
 
