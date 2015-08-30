@@ -32,11 +32,7 @@ Download the Cinder theme archive.
 
 <a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.1/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.1</button></a>
 
-Create a directory in your MkDocs project called `cinder`.
-
-<pre><code class="nohighlight">$ mkdir cinder</code></pre>
-
-Place the downloaded theme archive inside the new `cinder` directory and unpack it.
+Unpack the contents of the archive into a directory named `cinder` at the top level of your MkDocs project directory.
 
 Your project directory should now look like this:
 
