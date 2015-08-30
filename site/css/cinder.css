@@ -1,5 +1,5 @@
 /*
-  Cinder Theme for MkDocs | Copyright 2015 Christopher Simpkins | MIT License
+  Cinder Theme for MkDocs v0.9.1 | Copyright 2015 Christopher Simpkins | MIT License
 */
 
 body {
@@ -19,20 +19,17 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
 h1, h2 {
     font-weight: 700;
 }
-
 h4 {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-top: 20px;
     font-style: italic;
 }
-
 h5 {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-variant: small-caps;
 }
-
 pre, code {
     background-color: #FCFDFF;
 }
@@ -53,8 +50,6 @@ pre {
 .navbar-default {
     background-color: #343838;
     border-bottom: 8px #EBF2F2 solid;
-    /*background-color: #2B2D39;
-	border-bottom: 4px #FF0000 solid;*/
 }
 .bs-sidenav {
     background-image: url("../img/grid11.png");
@@ -81,4 +76,7 @@ pre {
     font-weight: 700;
     color: #343838;
     height: 45px;
+}
+footer > hr {
+    width: 35%;
 }
