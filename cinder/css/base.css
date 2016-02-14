@@ -9,8 +9,12 @@ h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id
     height: 75px;
 }
 
-ul.nav li.main {
+ul.nav li.first-level {
     font-weight: bold;
+}
+
+ul.nav li.third-level {
+    padding-left: 12px;
 }
 
 div.col-md-3 {
