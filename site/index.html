@@ -128,8 +128,9 @@
         
             <li class="second-level"><a href="#install-the-cinder-theme">Install the Cinder Theme</a></li>
             
-        
-            <li class="second-level"><a href="#complete-your-settings-file">Complete Your Settings File</a></li>
+                <li class="third-level"><a href="#1-install-with-pip">1. Install with pip</a></li>
+            
+                <li class="third-level"><a href="#2-manual-install">2. Manual Install</a></li>
             
         
     
@@ -195,6 +196,20 @@
 <pre><code class="nohighlight">$ cd [projectname]</code></pre>
 
 <h3 id="install-the-cinder-theme">Install the Cinder Theme</h3>
+<p>Choose one of the following install approaches:</p>
+<h4 id="1-install-with-pip">1. Install with pip</h4>
+<p>If you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with pip using the command:</p>
+<pre><code class="nohighlight">$ pip install mkdocs-cinder</code></pre>
+
+<p>MkDocs projects use a YAML settings file called <code>mkdocs.yml</code>.  This is located in the root of your project directory after you use the <code>mkdocs new</code> command.  Open the file in a text editor and modify it to define Cinder in the <code>theme</code> setting as follows (note that this is case-sensitive):</p>
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme: cinder
+pages:
+- Home: index.md
+</code></pre>
+
+<p><strong>Theme Updates</strong>: If you choose the pip install approach, you can update your Cinder theme to new releases with the command <code>$ pip install --upgrade mkdocs-cinder</code>.  Then re-build your static site files (see instructions below).</p>
+<h4 id="2-manual-install">2. Manual Install</h4>
 <p>Download the Cinder theme archive.</p>
 <p><a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.4/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.4</button></a></p>
 <p>Unpack the contents of the archive into a directory named <code>cinder</code> at the top level of your MkDocs project directory.</p>
@@ -215,7 +230,6 @@
       └── index.md
 </code></pre>
 
-<h3 id="complete-your-settings-file">Complete Your Settings File</h3>
 <p>MkDocs projects use a YAML settings file called <code>mkdocs.yml</code>.  This is located in the root of your project directory after you use the <code>mkdocs new</code> command.  Open the file in a text editor and modify it to include the <code>theme_dir</code> setting as follows:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
 theme_dir: cinder
@@ -223,6 +237,7 @@ pages:
 - Home: index.md
 </code></pre>
 
+<p><strong>Theme Updates</strong>: If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).</p>
 <h2 id="test-with-a-local-site-server">Test with a Local Site Server</h2>
 <p>Use the following command to establish a local server for your site:</p>
 <pre><code class="nohighlight">$ mkdocs serve</code></pre>
@@ -359,5 +374,5 @@ pages:
 
 <!--
 MkDocs version : 0.15.2
-Build Date UTC : 2016-02-18 01:11:57.191245
+Build Date UTC : 2016-02-18 02:34:40.924067
 -->

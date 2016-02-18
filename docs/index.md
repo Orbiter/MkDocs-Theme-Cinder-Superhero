@@ -28,6 +28,26 @@ Then navigate to the root of your project directory:
 
 ### Install the Cinder Theme
 
+Choose one of the following install approaches:
+
+#### 1. Install with pip
+
+If you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with pip using the command:
+
+<pre><code class="nohighlight">$ pip install mkdocs-cinder</code></pre>
+
+MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located in the root of your project directory after you use the `mkdocs new` command.  Open the file in a text editor and modify it to define Cinder in the `theme` setting as follows (note that this is case-sensitive):
+
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme: cinder
+pages:
+- Home: index.md
+</code></pre>
+
+**Theme Updates**: If you choose the pip install approach, you can update your Cinder theme to new releases with the command `$ pip install --upgrade mkdocs-cinder`.  Then re-build your static site files (see instructions below).
+
+#### 2. Manual Install
+
 Download the Cinder theme archive.
 
 <a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.4/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.4</button></a>
@@ -52,8 +72,6 @@ Your project directory should now look like this:
       └── index.md
 </code></pre>
 
-### Complete Your Settings File
-
 MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located in the root of your project directory after you use the `mkdocs new` command.  Open the file in a text editor and modify it to include the `theme_dir` setting as follows:
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
@@ -61,6 +79,8 @@ theme_dir: cinder
 pages:
 - Home: index.md
 </code></pre>
+
+**Theme Updates**: If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).
 
 ## Test with a Local Site Server
 
