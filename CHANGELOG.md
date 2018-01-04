@@ -1,5 +1,10 @@
 ## Changelog
 
+### 0.10.0
+
+- added support for MkDocs v0.17 changes
+- updated FontAwesome to v4.7.0
+
 ### v0.9.4
 
 - added support for H3 header titles in sidebar menu (PR #9)
