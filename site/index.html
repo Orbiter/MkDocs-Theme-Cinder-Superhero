@@ -4,15 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clean, responsive theme for static documentation websites that are generated with MkDocs"> 
-    <meta name="author" content="Christopher Simpkins">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="shortcut icon" href="./img/favicon.ico">
 
-    <title>Cinder</title>
+    <title></title>
 
     <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
@@ -38,14 +36,13 @@
     
 </head>
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
-            
             <!-- Expander button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -56,12 +53,12 @@
             
 
             <!-- Main title -->
+
             <a class="navbar-brand" href=".">Cinder</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
-            
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
                 
@@ -78,15 +75,13 @@
                 
                 
                 </ul>
-            
 
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
                     <li class="disabled">
                         <a rel="next" >
                             <i class="fa fa-arrow-left"></i> Previous
@@ -97,17 +92,9 @@
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
-                
-                
                     <li>
-                        <a href="https://github.com/chrissimpkins/cinder">
-                            
-                                <i class="fa fa-github"></i>
-                            
-                            GitHub
-                        </a>
+                        <a href="https://github.com/chrissimpkins/cinder/edit/master/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                     </li>
-                
             </ul>
         </div>
     </div>
@@ -117,62 +104,34 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-    
         <li class="first-level active"><a href="#about">About</a></li>
-        
-    
         <li class="first-level "><a href="#install">Install</a></li>
-        
             <li class="second-level"><a href="#install-mkdocs-create-a-new-project">Install MkDocs &amp; Create a New Project</a></li>
-            
-        
+                
             <li class="second-level"><a href="#install-the-cinder-theme">Install the Cinder Theme</a></li>
-            
+                
                 <li class="third-level"><a href="#1-install-with-pip">1. Install with pip</a></li>
-            
                 <li class="third-level"><a href="#2-manual-install">2. Manual Install</a></li>
-            
-        
-    
         <li class="first-level "><a href="#test-with-a-local-site-server">Test with a Local Site Server</a></li>
-        
-    
         <li class="first-level "><a href="#create-your-site">Create Your Site</a></li>
-        
             <li class="second-level"><a href="#add-content-with-markdown-syntax">Add Content with Markdown Syntax</a></li>
-            
-        
+                
             <li class="second-level"><a href="#add-new-pages">Add New Pages</a></li>
-            
-        
-    
+                
         <li class="first-level "><a href="#build-your-site">Build Your Site</a></li>
-        
-    
         <li class="first-level "><a href="#site-customization">Site Customization</a></li>
-        
             <li class="second-level"><a href="#site-favicon">Site Favicon</a></li>
-            
-        
+                
             <li class="second-level"><a href="#add-your-own-css-stylesheets">Add Your Own CSS Stylesheets</a></li>
-            
-        
+                
             <li class="second-level"><a href="#add-your-own-javascript">Add Your Own JavaScript</a></li>
-            
-        
+                
             <li class="second-level"><a href="#github-or-bitbucket-repository-link">Github or Bitbucket Repository Link</a></li>
-            
-        
+                
             <li class="second-level"><a href="#license-declaration-and-link">License Declaration and Link</a></li>
-            
-        
-    
+                
         <li class="first-level "><a href="#issues">Issues</a></li>
-        
-    
         <li class="first-level "><a href="#license">License</a></li>
-        
-    
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -211,7 +170,7 @@ pages:
 <p><strong>Theme Updates</strong>: If you choose the pip install approach, you can update your Cinder theme to new releases with the command <code>$ pip install --upgrade mkdocs-cinder</code>.  Then re-build your static site files (see instructions below).</p>
 <h4 id="2-manual-install">2. Manual Install</h4>
 <p>Download the Cinder theme archive.</p>
-<p><a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.4/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.4</button></a></p>
+<p><a href="https://github.com/chrissimpkins/cinder/archive/v0.10.0.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.10.0</button></a></p>
 <p>Unpack the contents of the archive into a directory named <code>cinder</code> at the top level of your MkDocs project directory.</p>
 <p>Your project directory should now look like this:</p>
 <pre><code class="nohighlight">.
@@ -326,8 +285,6 @@ pages:
     <footer class="col-md-12 text-center">
         <hr>
         <p>
-        <small>Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a><br></small>
-        
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
     </footer>
 
@@ -340,6 +297,8 @@ pages:
     </script>
     <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
     <script src="./js/base.js"></script>
+    <script src="./search/require.js"></script>
+    <script src="./search/search.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -371,8 +330,3 @@ pages:
     </body>
 
 </html>
-
-<!--
-MkDocs version : 0.15.2
-Build Date UTC : 2016-02-18 02:34:40.924067
--->
