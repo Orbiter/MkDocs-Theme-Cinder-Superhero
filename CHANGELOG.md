@@ -1,6 +1,10 @@
 ## Changelog
 
-### 0.10.0
+### v0.10.1
+
+- added responsive image support
+
+### v0.10.0
 
 - added support for MkDocs v0.17 changes
 - updated FontAwesome to v4.7.0
