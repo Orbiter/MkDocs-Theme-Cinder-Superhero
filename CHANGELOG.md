@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.10.2
+
+- Fix the templates in base.html that have been changed in mkdocs 0.17
+
 ### v0.10.1
 
 - added responsive image support
