@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.11.0
+
+- added support for Gitlab icon in navigation menus
+
 ### v0.10.2
 
 - Fix the templates in base.html that have been changed in mkdocs 0.17
