@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.12.1
+
+- bugfix: added *.yml to MANIFEST.in file to support new yml settings file required for mkdocs v1.0+
+
 ### v0.12.0
 
 - added `mkdocs_theme.yml` file to support mkdocs v1.0 settings file changes
