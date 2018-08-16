@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.12.0
+
+- added `mkdocs_theme.yml` file to support mkdocs v1.0 settings file changes
+
 ### v0.11.0
 
 - added support for Gitlab icon in navigation menus
