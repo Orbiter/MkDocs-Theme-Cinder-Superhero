@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.12.2
+
+- bugfix: added mock setting to the `mkdocs_theme.yml` file to address an upstream mkdocs bug that occurs when this file is blank (issue #46)
+
 ### v0.12.1
 
 - bugfix: added *.yml to MANIFEST.in file to support new yml settings file required for mkdocs v1.0+
