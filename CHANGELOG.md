@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.12.3
+
+- bugfix: fixed navigation links to address changes that were released in mkdocs v1.0
+
 ### v0.12.2
 
 - bugfix: added mock setting to the `mkdocs_theme.yml` file to address an upstream mkdocs bug that occurs when this file is blank (issue #46)
