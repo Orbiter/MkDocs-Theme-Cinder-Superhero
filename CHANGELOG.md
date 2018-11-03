@@ -1,5 +1,10 @@
 ## Changelog
 
+### v0.13.0
+
+- added option to disable table of contents in a page-specific manner with page metadata setting `disable_toc: true`
+- bugfix: fixed Google Analytics JavaScript in builds when this is defined in settings
+
 ### v0.12.3
 
 - bugfix: fixed navigation links to address changes that were released in mkdocs v1.0
@@ -10,7 +15,7 @@
 
 ### v0.12.1
 
-- bugfix: added *.yml to MANIFEST.in file to support new yml settings file required for mkdocs v1.0+
+- bugfix: added `*.yml` to MANIFEST.in file to support new yml settings file required for mkdocs v1.0+
 
 ### v0.12.0
 
