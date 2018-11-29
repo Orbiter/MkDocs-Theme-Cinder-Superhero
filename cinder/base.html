@@ -10,7 +10,9 @@
     <link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
     <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">
 
+    {% block htmltitle %}
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    {% endblock %}
 
     <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -57,6 +59,8 @@
     ga('send', 'pageview');
     </script>
     {% endif %}
+
+    {% block extrahead %} {% endblock %}
 </head>
 
 <body{% if page and page.is_homepage %} class="homepage" {% endif %}>
@@ -75,11 +79,13 @@
     </div>
 
     <footer class="col-md-12 text-center">
+        {% block footer %}
         <hr>
         <p>{% if config.copyright %}
         <small>{{ config.copyright }}<br></small>
         {% endif %}
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+        {% endblock %}
     </footer>
 
     <script src="{{ base_url }}/js/jquery-1.10.2.min.js"></script>
