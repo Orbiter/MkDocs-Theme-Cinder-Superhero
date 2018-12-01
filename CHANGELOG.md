@@ -1,5 +1,12 @@
 ## Changelog
 
+### v0.14.0
+
+- added htmltitle block
+- added extrahead block
+- added footer block
+- added optional revision date metadata in the footer
+
 ### v0.13.0
 
 - added option to disable table of contents in a page-specific manner with page metadata setting `disable_toc: true`
