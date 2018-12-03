@@ -50,7 +50,7 @@ pages:
 
 Download the Cinder theme archive.
 
-<a href="https://github.com/chrissimpkins/cinder/archive/v0.10.0.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.10.0</button></a>
+<a href="https://github.com/chrissimpkins/cinder/archive/v0.14.0.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder</button></a>
 
 Unpack the contents of the archive into a directory named `cinder` at the top level of your MkDocs project directory.
 
@@ -72,13 +72,14 @@ Your project directory should now look like this:
       └── index.md
 </code></pre>
 
-MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located in the root of your project directory after you use the `mkdocs new` command.  Open the file in a text editor and modify it to include the `theme_dir` setting as follows:
+MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located in the root of your project directory after you use the `mkdocs new` command.  Open the file in a text editor and modify it to include the `theme` settings as follows:
 
-<pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
-pages:
-- Home: index.md
+<pre><code class="yaml">theme:
+    name: null
+    custom_dir: 'cinder'
 </code></pre>
+
+See the [MkDocs documentation](https://www.mkdocs.org/user-guide/custom-themes/#creating-a-custom-theme) for additional details.
 
 **Theme Updates**: If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).
 
@@ -104,7 +105,7 @@ Add new pages to your site by creating a new Markdown file in your `docs` direct
 For example, to add an About page using a Markdown file that is located on the path `docs/about.md`, you would format the `mkdocs.yml` file as follows:
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme: cinder
 pages:
 - Home: index.md
 - About: about.md</code></pre>
@@ -128,7 +129,7 @@ The following are a few common customizations that you might be interested in.  
 Place your site favicon image file in the top level of your docs directory and then include a new `site_favicon:` field in the `mkdocs.yml` file:
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme: cinder
 site_favicon: favicon.ico
 pages:
   - Home: index.md
@@ -139,7 +140,7 @@ pages:
 Create a `css` directory inside your `docs` directory and add your CSS files.  You can overwrite any of the Cinder styles in your CSS files.  Then include your CSS files in the `mkdocs.yml` file with the `extra_css` field:
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme: cinder
 extra_css:
   - "css/mystyle.css"
   - "css/myotherstyle.css"
@@ -155,7 +156,7 @@ Your CSS styles fall at the end of the cascade and will override all styles incl
 Create a `js` directory inside your `docs` directory and add your JS files.  Then include your JS files in the `mkdocs.yml` file with the `extra_js` field:
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme: cinder
 extra_js:
   - "js/myscript.js"
   - "js/myotherscript.js"
@@ -168,11 +169,12 @@ pages:
 
 Create a new directory within your project (e.g., `cinder-theme-ext/`) and create `main.html`. Add the following line at the top of the HTML file.
 
-```django hljs
+```javascript
 {% extends "base.html" %}
 ```
 
 Instead of using `theme: cinder` or `theme_dir: cinder` in `mkdocs.yml`, use:
+
 ```yaml
 theme:
       name: cinder
@@ -182,16 +184,20 @@ theme:
 Refer to [MkDocs Documentation - Using the theme custom_dir](https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir) for more information.
 
 #### Adding extra HTML to the head tag
+
 Append to `main.html`:
-```django hljs
+
+```javascript
 {% block extrahead %}
       <meta name="author" content="{{ page.meta.author }}">
 {% endblock %}
 ```
 
 #### Replacing footer
+
 Append to `main.html`:
-```django hljs
+
+```javascript
 {% block footer %}
 <hr>
 <p>{% if config.copyright %}
