@@ -163,6 +163,50 @@ pages:
   - Home: index.md
   - About: about.md</code></pre>
 
+
+### Extending Cinder
+
+Create a new directory within your project (e.g., `cinder-theme-ext/`) and create `main.html`. Add the following line at the top of the HTML file.
+
+```django hljs
+{% extends "base.html" %}
+```
+
+Instead of using `theme: cinder` or `theme_dir: cinder` in `mkdocs.yml`, use:
+```yaml
+theme:
+      name: cinder
+      custom_dir: [custom dir]
+```
+
+Refer to [MkDocs Documentation - Using the theme custom_dir](https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir) for more information.
+
+#### Adding extra HTML to the head tag
+Append to `main.html`:
+```django hljs
+{% block extrahead %}
+      <meta name="author" content="{{ page.meta.author }}">
+{% endblock %}
+```
+
+#### Replacing footer
+Append to `main.html`:
+```django hljs
+{% block footer %}
+<hr>
+<p>{% if config.copyright %}
+      <small>{{ config.copyright }}<br></small>
+{% endif %}
+<small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> and <a href="https://sourcefoundry.org/cinder/">Cinder theme.</a></small>
+{% if page.meta.revision_date %}
+      <small><br><i>Updated {{ page.meta.revision_date }}</i></small>
+{% endif %}
+</p>
+{% endblock %}
+```
+
+More information can be found in [MkDocs Documentation - Overriding Template Blocks](https://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks).
+
 ### Github or Bitbucket Repository Link
 
 Include the `repo_url` field and define it with your repository URL:
