@@ -1,5 +1,17 @@
 ## Changelog
 
+### v0.15.0
+
+- fixed highlightjs syntax highlighter support
+- modified highlightjs syntax highlighter language support to 29 languages
+- added modified Github syntax highlighter CSS as default
+- updated Hack typeface to v3.003 release
+- updated install/usage documentation with MkDocs v1.0+ YAML settings
+- updated install/usage documentation with information about new optional blocks
+- updated specimen documentation with new source code example
+- removed `sites` directory from git version control
+- added .gitignore targets
+
 ### v0.14.0
 
 - added htmltitle block
