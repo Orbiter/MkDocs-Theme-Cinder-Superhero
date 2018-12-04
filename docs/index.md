@@ -2,7 +2,7 @@
 
 ## About
 
-Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the [Bootstrap framework](http://getbootstrap.com/) and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)), icons (<i class="fa fa-flag"></i> [FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
+Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the [Bootstrap framework](http://getbootstrap.com/) and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)) with support for [over 25 programming languages](/specimen/#language-support), icons (<i class="fa fa-flag"></i> [FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
 
 You are looking at the theme and can see a selection of the theme elements on the [Specimen page](/specimen/).
 
@@ -30,7 +30,7 @@ Then navigate to the root of your project directory:
 
 Choose one of the following install approaches:
 
-#### 1. Install with pip
+#### 1. Install with pip (Recommended)
 
 If you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with pip using the command:
 
@@ -40,9 +40,8 @@ MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located i
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
 theme: cinder
-pages:
-- Home: index.md
-</code></pre>
+nav:
+- Home: index.md</code></pre>
 
 **Theme Updates**: If you choose the pip install approach, you can update your Cinder theme to new releases with the command `$ pip install --upgrade mkdocs-cinder`.  Then re-build your static site files (see instructions below).
 
@@ -74,17 +73,18 @@ Your project directory should now look like this:
 
 MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located in the root of your project directory after you use the `mkdocs new` command.  Open the file in a text editor and modify it to include the `theme` settings as follows:
 
-<pre><code class="yaml">theme:
-    name: null
-    custom_dir: 'cinder'
-</code></pre>
+<pre><code class="yaml">site_name: [YOURPROJECT]
+theme:
+  name: null
+  custom_dir: 'cinder'
+nav:
+  - Home: index.md</code></pre>
 
 See the [MkDocs documentation](https://www.mkdocs.org/user-guide/custom-themes/#creating-a-custom-theme) for additional details.
 
 **Theme Updates**: If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).
 
 ## Test with a Local Site Server
-
 
 Use the following command to establish a local server for your site:
 
@@ -106,9 +106,9 @@ For example, to add an About page using a Markdown file that is located on the p
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
 theme: cinder
-pages:
-- Home: index.md
-- About: about.md</code></pre>
+nav:
+  - Home: index.md
+  - About: about.md</code></pre>
 
 Add additional pages to your site by repeating the above series of steps.
 
@@ -131,7 +131,7 @@ Place your site favicon image file in the top level of your docs directory and t
 <pre><code class="yaml">site_name: [YOURPROJECT]
 theme: cinder
 site_favicon: favicon.ico
-pages:
+nav:
   - Home: index.md
   - About: about.md</code></pre>
 
@@ -144,7 +144,7 @@ theme: cinder
 extra_css:
   - "css/mystyle.css"
   - "css/myotherstyle.css"
-pages:
+nav:
   - Home: index.md
   - About: about.md</code></pre>
 
@@ -160,7 +160,7 @@ theme: cinder
 extra_js:
   - "js/myscript.js"
   - "js/myotherscript.js"
-pages:
+nav:
   - Home: index.md
   - About: about.md</code></pre>
 
@@ -169,17 +169,15 @@ pages:
 
 Create a new directory within your project (e.g., `cinder-theme-ext/`) and create `main.html`. Add the following line at the top of the HTML file.
 
-```javascript
+```html
 {% extends "base.html" %}
 ```
 
 Instead of using `theme: cinder` or `theme_dir: cinder` in `mkdocs.yml`, use:
 
-```yaml
-theme:
-      name: cinder
-      custom_dir: [custom dir]
-```
+<pre><code class="yaml">theme:
+    name: cinder
+    custom_dir: [custom dir]</code></pre>
 
 Refer to [MkDocs Documentation - Using the theme custom_dir](https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir) for more information.
 
@@ -187,7 +185,7 @@ Refer to [MkDocs Documentation - Using the theme custom_dir](https://www.mkdocs.
 
 Append to `main.html`:
 
-```javascript
+```html
 {% block extrahead %}
       <meta name="author" content="{{ page.meta.author }}">
 {% endblock %}
@@ -197,7 +195,7 @@ Append to `main.html`:
 
 Append to `main.html`:
 
-```javascript
+```html
 {% block footer %}
 <hr>
 <p>{% if config.copyright %}
@@ -218,9 +216,9 @@ More information can be found in [MkDocs Documentation - Overriding Template Blo
 Include the `repo_url` field and define it with your repository URL:
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme: cinder
 repo_url: "https://github.com/chrissimpkins/cinder"
-pages:
+nav:
   - Home: index.md
   - About: about.md</code></pre>
 
@@ -231,9 +229,9 @@ The link appears at the upper right hand corner of your site.
 The Cinder theme displays your license declaration in the footer if you include a `copyright` field and define it with the text (and optionally the HTML link) that you would like to display:
 
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme: cinder
 copyright: "Cinder is licensed under the &lt;a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'&gt;MIT license</a>"
-pages:
+nav:
   - Home: index.md
   - About: about.md</code></pre>
 
@@ -247,6 +245,3 @@ If you have any issues with the theme, please report them on the Cinder reposito
 ## License
 
 Cinder is licensed under the MIT license. The full text of the license is available [here](https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md).
-
-
-
