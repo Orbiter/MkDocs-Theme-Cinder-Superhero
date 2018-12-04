@@ -146,6 +146,11 @@ Syntax highlighting support is available for the following languages:
 - Swift
 - YAML
 
+<div class="bs-callout bs-callout-info">
+  <h4>Note</h4>
+  Include source code formatted in <a href="https://github.github.com/gfm/#fenced-code-blocks" class="alert-link">Github-flavored Markdown fenced code blocks</a> with an <a href="https://github.github.com/gfm/#info-string" class="alert-link">info string</a> that defines the supported programming language to automate syntax highlighting when your site is built.
+</div>
+
 ## Tables
 
 ### Striped Table
@@ -267,4 +272,61 @@ Syntax highlighting support is available for the following languages:
 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
 
+## Alerts
 
+<div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+  A simple secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+  A simple success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+  A simple danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+  A simple warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+  A simple info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+  A simple light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+  A simple dark alert—check it out!
+</div>
+
+## Callouts
+
+<div class="bs-callout bs-callout-default">
+  <h4>Default Callout</h4>
+  This is a default callout.
+</div>
+
+<div class="bs-callout bs-callout-primary">
+  <h4>Primary Callout</h4>
+  This is a primary callout.
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4>Success Callout</h4>
+  This is a success callout.
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Info Callout</h4>
+  This is an info callout.
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Warning Callout</h4>
+  This is a warning callout.
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Danger Callout</h4>
+  This is a danger callout.
+</div>

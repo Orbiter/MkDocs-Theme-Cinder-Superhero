@@ -1,14 +1,18 @@
-<h1>Cinder Theme <small>for MkDocs</small></h1>
+<h1><i class="fas fa-fire" style="color:#FA023C"></i> Cinder Theme <small>for MkDocs</small></h1>
 
 ## About
 
-Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the [Bootstrap framework](http://getbootstrap.com/) and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)) with support for [over 25 programming languages](/specimen/#language-support), icons (<i class="fa fa-flag"></i> [FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a smashingly legible type scheme to get your message out to your users.
+Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the [Bootstrap 3 framework](https://getbootstrap.com/docs/3.3/) and includes pre-packaged:
 
-You are looking at the theme and can see a selection of the theme elements on the [Specimen page](/specimen/).
+<small><i class="fas fa-highlighter" style="color:#FA023C"></i> **[highlight.js v9.13.1](https://highlightjs.org/) syntax highlighting with support for [over 25 programming languages](/specimen/#language-support)**</small></br>
+<small><i class="fab fa-font-awesome-alt" style="color:#FA023C"></i> **[FontAwesome v5.5.0](https://fortawesome.github.io/Font-Awesome/) icon support**</small></br>
+<small><i class="fas fa-font" style="color:#FA023C"></i> **[smashingly legible type scheme](/specimen/#typography) to get your message out to your users**</small>
+
+You are viewing the theme in action and can see a selection of the theme elements on the [Specimen page](/specimen/).
 
 ## Install
 
-**<em>Required</em>**: Python 2.6+ or 3.3+
+**<em>Required</em>**: Python 2.7 or 3.4+
 
 ### Install MkDocs & Create a New Project
 
@@ -32,7 +36,7 @@ Choose one of the following install approaches:
 
 #### 1. Install with pip (Recommended)
 
-If you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with pip using the command:
+If you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with the Python package manager `pip` using the command:
 
 <pre><code class="nohighlight">$ pip install mkdocs-cinder</code></pre>
 
@@ -43,13 +47,18 @@ theme: cinder
 nav:
 - Home: index.md</code></pre>
 
-**Theme Updates**: If you choose the pip install approach, you can update your Cinder theme to new releases with the command `$ pip install --upgrade mkdocs-cinder`.  Then re-build your static site files (see instructions below).
+<div class="bs-callout bs-callout-default">
+  <h4>Updates with <code>pip</code></h4>
+  <p>Update your pip-installed Cinder theme to new releases with the command:</p>
+  <p><code>$ pip install --upgrade mkdocs-cinder</code></p>
+  <p>Then rebuild the static files (see documentation below)</p>
+</div>
 
 #### 2. Manual Install
 
-Download the Cinder theme archive.
+Download the Cinder theme archive by clicking the button below.
 
-<a href="https://github.com/chrissimpkins/cinder/archive/v0.15.0.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder</button></a>
+<a href="https://github.com/chrissimpkins/cinder/archive/v0.15.0.zip"><button type="button" class="btn btn-success"><i class="fas fa-cloud-download-alt fa-3x"></i> </br>  <span style="font-size:20px;">Download Cinder</span></button></a>
 
 Unpack the contents of the archive into a directory named `cinder` at the top level of your MkDocs project directory.
 
@@ -82,7 +91,10 @@ nav:
 
 See the [MkDocs documentation](https://www.mkdocs.org/user-guide/custom-themes/#creating-a-custom-theme) for additional details.
 
-**Theme Updates**: If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).
+<div class="bs-callout bs-callout-default">
+  <h4>Updates, the Manual Approach</h4>
+  If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).
+</div>
 
 ## Test with a Local Site Server
 
@@ -239,9 +251,9 @@ nav:
 
 If you have any issues with the theme, please report them on the Cinder repository:
 
-<a href="https://github.com/chrissimpkins/cinder/issues/new"><button class="btn btn-primary" type="submit">Report Issue</button></a>
-<a href="https://github.com/chrissimpkins/cinder/issues"><button class="btn btn-primary" type="submit">Active Issues</button></a>
+<a href="https://github.com/chrissimpkins/cinder/issues/new"><button class="btn btn-primary btn-lg" type="submit"><i class="fab fa-github fa-2x"></i> Report Issue</button></a>
+<a href="https://github.com/chrissimpkins/cinder/issues"><button class="btn btn-primary btn-lg" type="submit"> Active Issues <i class="fab fa-github fa-2x"></i></button></a>
 
 ## License
 
-Cinder is licensed under the MIT license. The full text of the license is available [here](https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md).
+Cinder is licensed under the [MIT license](https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md).
