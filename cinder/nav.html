@@ -49,7 +49,7 @@
                     {%- if 'search' in config['plugins'] %}
                     <li>
                         <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fa fa-search"></i> Search
+                            <i class="fas fa-search"></i> Search
                         </a>
                     </li>
                     {%- endif %}
@@ -59,12 +59,12 @@
                     {%- if page and (page.next_page or page.previous_page) %}
                     <li {% if not page.previous_page %}class="disabled"{% endif %}>
                         <a rel="next" {% if page.previous_page %}href="{{ page.previous_page.url|url }}"{% endif %}>
-                            <i class="fa fa-arrow-left"></i> Previous
+                            <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li {% if not page.next_page %}class="disabled"{% endif %}>
                         <a rel="prev" {% if page.next_page %}href="{{ page.next_page.url|url }}"{% endif %}>
-                            Next <i class="fa fa-arrow-right"></i>
+                            Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     {%- endif %}
@@ -75,11 +75,11 @@
                     <li>
                         <a href="{{ page.edit_url }}">
                             {%- if config.repo_name == 'GitHub' -%}
-                            <i class="fa fa-github"></i> Edit on {{ config.repo_name }}
+                            <i class="fab fa-github"></i> Edit on {{ config.repo_name }}
                             {%- elif config.repo_name == 'Bitbucket' -%}
-                            <i class="fa fa-bitbucket"></i> Edit on {{ config.repo_name }}
+                            <i class="fab fa-bitbucket"></i> Edit on {{ config.repo_name }}
                             {%- elif config.repo_name == 'GitLab' -%}
-                            <i class="fa fa-gitlab"></i> Edit on {{ config.repo_name }}
+                            <i class="fab fa-gitlab"></i> Edit on {{ config.repo_name }}
                             {%- else -%}
                             Edit on {{ config.repo_name }}
                             {%- endif -%}
@@ -89,11 +89,11 @@
                     <li>
                         <a href="{{ config.repo_url }}">
                             {%- if config.repo_name == 'GitHub' -%}
-                            <i class="fa fa-github"></i> {{ config.repo_name }}
+                            <i class="fab fa-github"></i> {{ config.repo_name }}
                             {%- elif config.repo_name == 'Bitbucket' -%}
-                            <i class="fa fa-bitbucket"></i> {{ config.repo_name }}
+                            <i class="fab fa-bitbucket"></i> {{ config.repo_name }}
                             {%- elif config.repo_name == 'GitLab' -%}
-                            <i class="fa fa-gitlab"></i> {{ config.repo_name }}
+                            <i class="fab fa-gitlab"></i> {{ config.repo_name }}
                             {%- else -%}
                             {{ config.repo_name }}
                             {%- endif -%}
