@@ -81,25 +81,70 @@ This is an example of inline code `#import requests`
 
 <h3>Preformatted Code Blocks <small>with Syntax Highlighting</small></h3>
 
-<pre><code class="python">def convert_markdown(markdown_source, config, site_navigation=None):
-    """
-    Convert the Markdown source file to HTML as per the config and
-    site_navigation. Return a tuple of the HTML as a string, the parsed table
-    of contents, and a dictionary of any metadata that was specified in the
-    Markdown file.
+<pre><code class="python">def request(method, url, **kwargs):
+    """Constructs and sends a :class:`Request <Request>`.
+    Usage::
+      >>> import requests
+      >>> req = requests.request('GET', 'https://httpbin.org/get')
+      <Response [200]>
     """
 
-    extensions = [
-        RelativePathExtension(site_navigation, config['strict'])
-    ] + config['markdown_extensions']
+    # By using the 'with' statement we are sure the session is closed, thus we
+    # avoid leaving sockets open which can trigger a ResourceWarning in some
+    # cases, and look like a memory leak in others.
+    with sessions.Session() as session:
+        return session.request(method=method, url=url, **kwargs)
 
-    return utils.convert_markdown(
-        markdown_source=markdown_source,
-        extensions=extensions,
-        extension_configs=config['mdx_configs']
-    )
+def get(url, params=None, **kwargs):
+    r"""Sends a GET request.
+    :param url: URL for the new :class:`Request` object.
+    :param params: (optional) Dictionary, list of tuples or bytes to send
+        in the body of the :class:`Request`.
+    :param \*\*kwargs: Optional arguments that ``request`` takes.
+    :return: :class:`Response <Response>` object
+    :rtype: requests.Response
+    """
+
+    kwargs.setdefault('allow_redirects', True)
+    return request('get', url, params=params, **kwargs)
 </code></pre>
 
+<div id="language-support"></div>
+
+<small>(Source code sample from the Python <a href="https://github.com/requests/requests">requests library</a>, <a href="https://github.com/requests/requests/blob/master/LICENSE">Apache License, v2.0</a>)</small>
+
+
+Syntax highlighting support is available for the following languages:
+
+- Apache
+- Bash
+- C#
+- C++
+- CSS
+- CoffeeScript
+- Diff
+- Go
+- HTML/XML
+- HTTP
+- Ini, TOML
+- JSON
+- Java
+- JavaScript
+- Makefile
+- Markdown
+- Nginx
+- Objective-C
+- PHP
+- Perl
+- Properties
+- Python
+- R
+- Ruby
+- Rust
+- SQL
+- Shell Session
+- Swift
+- YAML
 
 ## Tables
 
