@@ -7,4 +7,5 @@ copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpki
 nav:
   - Home: index.md
   - Specimen: specimen.md
-
+markdown_extensions:
+  - admonition
