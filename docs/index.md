@@ -4,11 +4,11 @@
 
 Cinder is a clean, responsive theme for static documentation sites that are generated with [MkDocs](https://github.com/mkdocs/mkdocs). It's built on the [Bootstrap 3 framework](https://getbootstrap.com/docs/3.3/) and includes pre-packaged:
 
-<small><i class="fas fa-highlighter" style="color:#FA023C"></i> **[highlight.js v9.13.1](https://highlightjs.org/) syntax highlighting with support for [over 25 programming languages](/specimen/#language-support)**</small></br>
+<small><i class="fas fa-highlighter" style="color:#FA023C"></i> **[highlight.js v9.13.1](https://highlightjs.org/) syntax highlighting with support for [over 25 programming languages](./specimen#language-support)**</small></br>
 <small><i class="fab fa-font-awesome-alt" style="color:#FA023C"></i> **[FontAwesome v5.5.0](https://fortawesome.github.io/Font-Awesome/) icon support**</small></br>
-<small><i class="fas fa-font" style="color:#FA023C"></i> **[smashingly legible type scheme](/specimen#typography) to get your message out to your users**</small>
+<small><i class="fas fa-font" style="color:#FA023C"></i> **[smashingly legible type scheme](./specimen#typography) to get your message out to your users**</small>
 
-You are viewing the theme in action and can see a selection of the theme elements on the [Specimen page](/specimen/).
+You are viewing the theme in action and can see a selection of the theme elements on the [Specimen page](./specimen/).
 
 ## Install
 
