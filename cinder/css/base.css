@@ -179,6 +179,7 @@ div.source-links {
     border: 1px solid #eee;
     border-left-width: 5px;
     border-radius: 3px;
+    background-color: #FCFDFF;
 }
 .bs-callout h4 {
     font-style: normal;
@@ -232,3 +233,55 @@ div.source-links {
     color: #5bc0de;
 }
 /* End Bootstrap Callouts CSS Source by Chris Pratt */
+
+/* Admonitions */
+.admonition {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    background-color: #FCFDFF;
+}
+
+.admonition p:last-child {
+    margin-bottom: 0;
+}
+.admonition code {
+    border-radius: 3px;
+}
+.admonition+.admonition {
+    margin-top: -5px;
+}
+
+.admonition.note { /* csslint allow: adjoining-classes */
+    border-left-color: #428bca;
+}
+
+.admonition.warning { /* csslint allow: adjoining-classes */
+    border-left-color: #f0ad4e;
+}
+
+.admonition.danger { /* csslint allow: adjoining-classes */
+    border-left-color: #d9534f;
+}
+
+.admonition-title {
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.admonition.note > .admonition-title {
+    color: #428bca;
+}
+
+.admonition.warning > .admonition-title {
+    color: #f0ad4e;
+}
+
+.admonition.danger > .admonition-title {
+    color: #d9534f;
+}
