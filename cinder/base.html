@@ -14,16 +14,16 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     {% endblock %}
 
-    <link href="{{ base_url }}/css/bootstrap-custom.css" rel="stylesheet">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/3.003/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="{{ base_url }}/css/base.css" rel="stylesheet">
-    <link href="{{ base_url }}/css/cinder.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">{%- for path in extra_css %}
+    <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="{{ base_url }}/css/base.min.css" rel="stylesheet">
+    <link href="{{ base_url }}/css/cinder.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ base_url }}/css/highlight.min.css">
 
-
+    {%- for path in extra_css %}
     <link href="{{ path }}" rel="stylesheet">{%- endfor %}
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -98,7 +98,7 @@
     <script>
     var base_url = '{{ base_url }}';
     </script>
-    <script data-main="{{ base_url }}/mkdocs/js/search.js" src="{{ base_url }}/mkdocs/js/require.js"></script>
+    <!-- <script data-main="{{ base_url }}/mkdocs/js/search.js" src="{{ base_url }}/mkdocs/js/require.js"></script> -->
     <script src="{{ base_url }}/js/base.js"></script>
     {%- for path in extra_javascript %}
     <script src="{{ path }}"></script>
