@@ -6,7 +6,7 @@ Cinder is a clean, responsive theme for static documentation sites that are gene
 
 <small><i class="fas fa-highlighter" style="color:#FA023C"></i> **[highlight.js v9.13.1](https://highlightjs.org/) syntax highlighting with support for [over 25 programming languages](/specimen/#language-support)**</small></br>
 <small><i class="fab fa-font-awesome-alt" style="color:#FA023C"></i> **[FontAwesome v5.5.0](https://fortawesome.github.io/Font-Awesome/) icon support**</small></br>
-<small><i class="fas fa-font" style="color:#FA023C"></i> **[smashingly legible type scheme](/specimen/#typography) to get your message out to your users**</small>
+<small><i class="fas fa-font" style="color:#FA023C"></i> **[smashingly legible type scheme](/specimen#typography) to get your message out to your users**</small>
 
 You are viewing the theme in action and can see a selection of the theme elements on the [Specimen page](/specimen/).
 
@@ -193,6 +193,8 @@ Instead of using `theme: cinder` or `theme_dir: cinder` in `mkdocs.yml`, use:
 
 Refer to [MkDocs Documentation - Using the theme custom_dir](https://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme-custom_dir) for more information.
 
+Use the following examples as reference. You can put your own [Jinja2](http://jinja.pocoo.org/) within the blocks. More information can be found in [MkDocs Documentation - Overriding Template Blocks](https://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks).
+
 #### Adding extra HTML to the head tag
 
 Append to `main.html`:
@@ -213,7 +215,7 @@ Append to `main.html`:
 <p>{% if config.copyright %}
       <small>{{ config.copyright }}<br></small>
 {% endif %}
-<small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> and <a href="https://sourcefoundry.org/cinder/">Cinder theme.</a></small>
+<small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
 {% if page.meta.revision_date %}
       <small><br><i>Updated {{ page.meta.revision_date }}</i></small>
 {% endif %}
@@ -221,7 +223,7 @@ Append to `main.html`:
 {% endblock %}
 ```
 
-More information can be found in [MkDocs Documentation - Overriding Template Blocks](https://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks).
+`page.meta.revision_date` can be set by using [meta-data (front-matter)](https://www.mkdocs.org/user-guide/writing-your-docs/#meta-data) at the beginning of your Markdown document or using [mkdocs-git-revision-date-plugin](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin).
 
 ### Github or Bitbucket Repository Link
 
