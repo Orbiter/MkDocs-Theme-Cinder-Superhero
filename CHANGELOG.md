@@ -2,14 +2,28 @@
 
 ### v0.15.0
 
+- BACKWARDS INCOMPATIBLE UPDATE - you will need to update your Font Awesome icon classes, possibly make other changes.  Read through the modifications in detail and test your site if you are upgrading from previous versions of the Cinder theme.
+- added admonition rendering support for note, warning, danger types from Markdown markup
+- added Bootstrap alert support
+- added Bootstrap-style callout support (derived and slightly modified from Chris Pratt's CSS source under MIT License https://codepen.io/chrisdpratt/details/IAymB/)
+- added modified Github syntax highlighter CSS as default
+- updated Font Awesome to v5.5.0
+- updated highlightjs to v9.13.1
+- updated jQuery to v3.3.1
+- updated html5shiv to v3.7.3
+- updated respond.js to v1.4.2
+- updated Google webfont loader (webfont.js) to v1.6.28
+- updated Hack typeface to v3.003 release
 - fixed highlightjs syntax highlighter support
 - modified highlightjs syntax highlighter language support to 29 languages
-- added modified Github syntax highlighter CSS as default
-- updated Hack typeface to v3.003 release
-- updated install/usage documentation with MkDocs v1.0+ YAML settings
+- fixed ToC scrolling when height > window height (Issue #43, PR #55)
+- updated install/usage documentation with MkDocs v1.0+ YAML syntax
 - updated install/usage documentation with information about new optional blocks
 - updated specimen documentation with new source code example
+- updated specimen documentation with new alert examples
+- updated specimen documentation with new callouts examples
 - removed `sites` directory from git version control
+- minified all CSS files used in the theme
 - added .gitignore targets
 
 ### v0.14.0
