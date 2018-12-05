@@ -330,3 +330,57 @@ Syntax highlighting support is available for the following languages:
   <h4>Danger Callout</h4>
   This is a danger callout.
 </div>
+
+## Admonitions
+
+The following admonitions are formatted like the callouts above but can be implemented in Markdown when you include the `admonition` Markdown extension in your `mkdocs.yml` file.  
+
+Add the following setting to `mkdocs.yml`:
+
+```yaml
+markdown_extensions:
+  - admonition
+```
+
+and then follow the instructions in [the extension documentation](https://python-markdown.github.io/extensions/admonition/) to author admonitions in your documentation.
+
+Cinder currently supports `note`, `warning`, and `danger` admonition types.
+
+!!! note
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+    <pre><code>
+    \# this is a note
+    def func(arg) {
+      \# notable things are in here!
+      return None
+    }
+    </code></pre>
+
+!!! warning
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+    <pre><code>
+    \# this is a warning
+    def func(arg) {
+      \# be careful!
+      return None
+    }
+    </code></pre>
+
+!!! danger
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+    <pre><code>
+    \# this is dangerous
+    def func(arg) {
+      \# BOOM!
+      return None
+    }
+    </code></pre>
