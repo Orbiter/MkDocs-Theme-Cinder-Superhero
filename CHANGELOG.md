@@ -1,5 +1,10 @@
 ## Changelog
 
+### v0.16.0
+
+- fix for jQuery associated bug that lead to failure of dropdown menu behavior as of v0.15.0. This required us to revert to v1.12.4 of jQuery as is used with Bootstrap 3 theme
+- removed embedded jQuery and transitioned to jQuery served from Google CDN
+
 ### v0.15.0
 
 - BACKWARDS INCOMPATIBLE UPDATE - you will need to update your Font Awesome icon classes, possibly make other changes.  Read through the modifications in detail and test your site if you are upgrading from previous versions of the Cinder theme.
