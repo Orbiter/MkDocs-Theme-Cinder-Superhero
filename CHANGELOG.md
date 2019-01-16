@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.16.1
+
+- included page revision metadata in the footer block of the base.html template file
+
 ### v0.16.0
 
 - fix for jQuery associated bug that lead to failure of dropdown menu behavior as of v0.15.0. This required us to revert to v1.12.4 of jQuery as is used with Bootstrap 3 theme
