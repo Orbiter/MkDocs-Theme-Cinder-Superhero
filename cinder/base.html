@@ -85,8 +85,8 @@
         <small>{{ config.copyright }}<br></small>
         {% endif %}
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
-        
-        {% if page.meta.revision_date %}<br>
+
+        {% if page and page.meta.revision_date %}<br>
         <small>Revised on: {{ page.meta.revision_date }}</small>
         {% endif %}
         {% endblock %}
