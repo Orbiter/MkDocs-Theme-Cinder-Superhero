@@ -1,1 +1,4 @@
 cinder_theme: true
+
+static_templates:
+  - 404.html
