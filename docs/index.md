@@ -58,7 +58,7 @@ nav:
 
 Download the Cinder theme archive by clicking the button below.
 
-<a href="https://github.com/chrissimpkins/cinder/archive/v0.16.1.zip"><button type="button" class="btn btn-success"><i class="fas fa-cloud-download-alt fa-3x"></i> </br>  <span style="font-size:20px;">Download Cinder</span></button></a>
+<a href="https://github.com/chrissimpkins/cinder/archive/v0.16.2.zip"><button type="button" class="btn btn-success"><i class="fas fa-cloud-download-alt fa-3x"></i> </br>  <span style="font-size:20px;">Download Cinder</span></button></a>
 
 Unpack the contents of the archive into a directory named `cinder` at the top level of your MkDocs project directory.
 
