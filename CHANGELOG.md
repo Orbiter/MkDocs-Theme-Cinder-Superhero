@@ -1,5 +1,10 @@
 ## Changelog
 
+### v0.16.2
+
+- fixed: missing 404 page build (PR #65)
+- fixed: focus search input when opening search modal (PR #63)
+
 ### v0.16.1
 
 - included page revision metadata in the footer block of the base.html template file
