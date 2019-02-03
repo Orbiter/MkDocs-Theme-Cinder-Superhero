@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.16.3
+
+- fixed: Hack webfont URL
+
 ### v0.16.2
 
 - fixed: missing 404 page build (PR #65)
