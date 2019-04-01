@@ -92,18 +92,21 @@
         {% endif %}
         {% endblock %}
     </footer>
-
+    
+    {%- block scripts %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ 'js/bootstrap-3.0.3.min.js'|url }}"></script>
     <script src="{{ 'js/highlight.pack.js'|url }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-    var base_url = '{{ base_url }}';
-    </script>
+    <script>var base_url = {{ base_url | tojson }}</script>
+    {% if config.theme.shortcuts %}
+        <script>var shortcuts = {{ config.theme.shortcuts | tojson }}</script>
+    {% endif %}
     <script src="{{ 'js/base.js'|url }}"></script>
     {%- for path in config['extra_javascript'] %}
     <script src="{{ path|url }}"></script>
     {%- endfor %}
+    {%- endblock %}
 
     {% if 'search' in config['plugins'] %}{%- include "search-modal.html" %}{% endif %}
     {%- include "keyboard-modal.html" %}

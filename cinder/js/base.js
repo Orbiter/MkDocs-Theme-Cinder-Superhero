@@ -47,41 +47,43 @@ $(document).ready(function() {
       }
     });
 
-    // Populate keyboard modal with proper Keys
-    $keyboard_modal.find('.help.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.help];
-    $keyboard_modal.find('.prev.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.previous];
-    $keyboard_modal.find('.next.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.next];
-    $keyboard_modal.find('.search.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.search];
+    if (typeof shortcuts !== 'undefined') {
+      // Populate keyboard modal with proper Keys
+      $keyboard_modal.find('.help.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.help];
+      $keyboard_modal.find('.prev.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.previous];
+      $keyboard_modal.find('.next.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.next];
+      $keyboard_modal.find('.search.shortcut kbd')[0].innerHTML = keyCodes[shortcuts.search];
 
-    // Keyboard navigation
-    document.addEventListener("keydown", function(e) {
-        if ($(e.target).is(':input')) return true;
-        var key = e.which || e.keyCode || window.event && window.event.keyCode;
-        var page;
-        switch (key) {
-            case shortcuts.next:
-                page = $('.navbar a[rel="next"]:first').prop('href');
-                break;
-            case shortcuts.previous:
-                page = $('.navbar a[rel="prev"]:first').prop('href');
-                break;
-            case shortcuts.search:
-                e.preventDefault();
-                $keyboard_modal.modal('hide');
-                $search_modal.modal('show');
-                $search_modal.find('#mkdocs-search-query').focus();
-                break;
-            case shortcuts.help:
-                $search_modal.modal('hide');
-                $keyboard_modal.modal('show');
-                break;
-            default: break;
-        }
-        if (page) {
-            $keyboard_modal.modal('hide');
-            window.location.href = page;
-        }
-    });
+      // Keyboard navigation
+      document.addEventListener("keydown", function(e) {
+          if ($(e.target).is(':input')) return true;
+          var key = e.which || e.keyCode || window.event && window.event.keyCode;
+          var page;
+          switch (key) {
+              case shortcuts.next:
+                  page = $('.navbar a[rel="next"]:first').prop('href');
+                  break;
+              case shortcuts.previous:
+                  page = $('.navbar a[rel="prev"]:first').prop('href');
+                  break;
+              case shortcuts.search:
+                  e.preventDefault();
+                  $keyboard_modal.modal('hide');
+                  $search_modal.modal('show');
+                  $search_modal.find('#mkdocs-search-query').focus();
+                  break;
+              case shortcuts.help:
+                  $search_modal.modal('hide');
+                  $keyboard_modal.modal('show');
+                  break;
+              default: break;
+          }
+          if (page) {
+              $keyboard_modal.modal('hide');
+              window.location.href = page;
+          }
+      });
+    }
 
     $('table').addClass('table table-striped table-hover');
 
