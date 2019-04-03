@@ -57,7 +57,7 @@ $(document).ready(function() {
       // Keyboard navigation
       document.addEventListener("keydown", function(e) {
           if ($(e.target).is(':input')) return true;
-          var key = e.which || e.keyCode || window.event && window.event.keyCode;
+          var key = e.which || e.key || window.event && window.event.key;
           var page;
           switch (key) {
               case shortcuts.next:
