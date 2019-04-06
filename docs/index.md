@@ -176,6 +176,19 @@ nav:
   - Home: index.md
   - About: about.md</code></pre>
 
+### Keyboard shortcuts
+
+In your `mkdocs.yml` file, place the following to enable keyboard shortcuts. 
+
+```
+shortcuts:
+    help: 191    # ?
+    next: 39     # right arrow
+    previous: 37 # left arrow
+    search: 83   # s
+```
+
+The numbers correspond to the key that you would like to use for that shortcut. You can use [https://keycode.info/](https://keycode.info/) to find the keycode you want.
 
 ### Extending Cinder
 
