@@ -2,7 +2,7 @@
 
 ### v0.17.0
 
-- added support for keyboard shortcut bindings
+- added support for keyboard shortcut bindings (PR #71)
 - updated documentation with keyboard shortcut binding settings in the theme yaml settings file
 - fixed: incorrect border radius CSS settings in dropdown menus (PR #72)
 - fixed: webfont.js URL (PR #69)
