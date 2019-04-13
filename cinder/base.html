@@ -92,46 +92,24 @@
         {% endif %}
         {% endblock %}
     </footer>
-
+    
+    {%- block scripts %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ 'js/bootstrap-3.0.3.min.js'|url }}"></script>
     <script src="{{ 'js/highlight.pack.js'|url }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-    var base_url = '{{ base_url }}';
-    </script>
+    <script>var base_url = {{ base_url | tojson }}</script>
+    {% if config.shortcuts %}
+        <script>var shortcuts = {{ config.shortcuts | tojson }}</script>
+    {% endif %}
     <script src="{{ 'js/base.js'|url }}"></script>
     {%- for path in config['extra_javascript'] %}
     <script src="{{ path|url }}"></script>
     {%- endfor %}
+    {%- endblock %}
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span>
-                        <span class="sr-only">Close</span>
-                    </button>
-                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        From here you can search these documents. Enter your search terms below.
-                    </p>
-                    <form role="form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                        </div>
-                    </form>
-                    <div id="mkdocs-search-results"></div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-
+    {% if 'search' in config['plugins'] %}{%- include "search-modal.html" %}{% endif %}
+    {%- include "keyboard-modal.html" %}
     </body>
 
 </html>
