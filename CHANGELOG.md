@@ -1,5 +1,12 @@
 ## Changelog
 
+### v0.17.0
+
+- added support for keyboard shortcut bindings
+- updated documentation with keyboard shortcut binding settings in the theme yaml settings file
+- fixed: incorrect border radius CSS settings in dropdown menus (PR #72)
+- fixed: webfont.js URL (PR #69)
+
 ### v0.16.3
 
 - fixed: Hack webfont URL
