@@ -6,7 +6,7 @@ theme:
 
 site_author: Christopher Simpkins, Michael Christen
 site_description: "A Superhero-modified version of Cinder"
-repo_url: "https://github.com/chrissimpkins/cinder"
+repo_url: "https://github.com/Orbiter/MkDocs-Theme-Cinder-Superhero"
 
 nav:
   - Home: index.md
