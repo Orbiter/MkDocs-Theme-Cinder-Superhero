@@ -1,11 +1,17 @@
-site_name: Cinder
-theme: cinder
-site_author: Christopher Simpkins
-site_description: "A clean, responsive theme for static documentation websites that are generated with MkDocs"
+site_name: Cinder + Superhero
+
+theme:
+    name: null
+    custom_dir: 'cinder-superhero'
+
+site_author: Christopher Simpkins, Michael Christen
+site_description: "A Superhero-modified version of Cinder"
 repo_url: "https://github.com/chrissimpkins/cinder"
-copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
+
 nav:
   - Home: index.md
+  - Cinder: cinder.md
   - Specimen: specimen.md
+
 markdown_extensions:
   - admonition

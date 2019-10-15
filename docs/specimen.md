@@ -66,12 +66,12 @@ All HTML headings, `<h1>` through `<h6>`, are available. `.h1` through `.h6` cla
 
 ### Contextual Colors
 
-<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-<p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-<p class="text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-<p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-<p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-<p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. (muted)</p>
+<p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. (primary)</p>
+<p class="text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. (success)</p>
+<p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. (info)</p>
+<p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. (warning)</p>
+<p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. (danger)</p>
 
 ## Code
 
