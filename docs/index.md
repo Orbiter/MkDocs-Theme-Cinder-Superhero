@@ -3,15 +3,15 @@ disable_toc: true
 <div class="jumbotron"><div class="container">
   <h1>Cinder + Superhero</h1>
   <p>&nbsp;</p>
-  <p><a class="btn btn-primary btn-lg" href="/cinder/" role="button">Learn more</a>
-  <a class="btn btn-warning btn-lg" href="/specimen/" role="button">Theme</a></p>
+  <p><a class="btn btn-primary btn-lg" href="cinder/" role="button">Learn more</a>
+  <a class="btn btn-warning btn-lg" href="specimen/" role="button">Theme</a></p>
 </div></div>
 
 A Superhero-inspired theme based on Cinder for MKDocs
 
-* Cinder: http://sourcefoundry.org/cinder/
-* Superhero: https://bootswatch.com/superhero/
-* MKDocs: https://www.mkdocs.org
+* Cinder: <http://sourcefoundry.org/cinder/>
+* Superhero: <https://bootswatch.com/superhero/>
+* MKDocs: <https://www.mkdocs.org>
 
 
 ## This is how documentation will look like:
@@ -19,8 +19,8 @@ A Superhero-inspired theme based on Cinder for MKDocs
 
 
 ## Usage:
-* Install MKDocs according to https://www.mkdocs.org/#installation
-* Run `mkdocs serve` to host a live version of your documents, watch them at http://localhost:8000/
+* Install MKDocs according to <https://www.mkdocs.org/#installation>
+* Run `mkdocs serve` to host a live version of your documents, watch them at <http://localhost:8000/>
 * Run `mkdocs build` to make a static web page out of your documentation inside `site`
 * Edit the documentation markdown files in `docs` to make your own documentation
 
