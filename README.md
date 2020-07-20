@@ -6,6 +6,8 @@ A Superhero-inspired theme based on Cinder for MKDocs
 * Superhero: https://bootswatch.com/superhero/
 * MKDocs: https://www.mkdocs.org
 
+A live version of this mkdocs project is hosted as github pages
+* https://orbiter.github.io/MkDocs-Theme-Cinder-Superhero/
 
 ## This is how documentation will look like:
 ![Screenshot](/docs/img/screenshot.png)
