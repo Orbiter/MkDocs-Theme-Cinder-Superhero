@@ -1,6 +1,6 @@
 # Cinder + Superhero
 
-A Superhero-inspired theme based on Cinder for MKDocs
+A Superhero-inspired dark theme based on Cinder for MKDocs
 
 * Cinder: http://sourcefoundry.org/cinder/
 * Superhero: https://bootswatch.com/superhero/
