@@ -7,6 +7,7 @@
 - Headers: [PT Sans](https://www.google.com/fonts/specimen/PT+Sans)
 - Body: [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
 - Code: [Hack](http://sourcefoundry.org/hack/)
+- Icons: <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Glyphicons
 
 ### Body Copy
 
